@@ -1,0 +1,12 @@
+<h2>{{title}}</h2>
+
+<section id="form">
+  <form (ngChange)="change(task)" #formTask="ngForm">
+    <div class="form-group">
+      <label>Descrição</label>
+      <textarea [(ngModel)]="task.description" name="description" cols="173" rows="5" class="form=control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mr-2" (click)="change(task)">Salvar</button>
+    <button type="button" class="btn btn-secondary" [routerLink]="['']">Cancelar</button>
+  </form>
+</section>

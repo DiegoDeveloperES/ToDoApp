@@ -1,0 +1,27 @@
+- npm install -g @angular/cli
+- ng new ToDoApp
+- cd .\ToDoApp\
+- Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+- ng serve -o > abre a aplicação*****
+- ng g component tasks/task-list
+- ng g component tasks/task-list-item
+- ng g component tasks/task-form
+- ng g service tasks/shared/task
+- ng g class tasks/shared/task
+
+> Building a template-driven form
+
+- Tive que adicionar isso no arquivo tsconfig.json
+    > "noImplicitReturns": false, //https://stackoverflow.com/questions/49699067/property-has-no-initializer-and-is-not-definitely-assigned-in-the-construc
+    > "strictPropertyInitialization": false, //https://stackoverflow.com/questions/49699067/property-has-no-initializer-and-is-not-definitely-assigned-in-the-construc
+    > "strictNullChecks":false, //https://stackoverflow.com/questions/67961328/angular-error-ts2322-type-object-is-not-assignable-to-type-never-for-li
+
+
+> Para fazer a tela de login
+- ng g component account/login
+- ng g component account/create-account
+- ng g service account/shared/account (CanActivate)
+- ng g guard account/shared/auth
+
+- ng g component layout/home
+- ng g component layout/authentication
