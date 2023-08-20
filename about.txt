@@ -25,3 +25,8 @@
 
 - ng g component layout/home
 - ng g component layout/authentication
+
+> Comandos git
+git init
+git add.
+git commit
